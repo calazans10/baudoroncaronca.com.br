@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baú do RoNca RoNca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+  <style>
+    body {
+      width: 100%;
+      background: #F0EEE5;
+      color: #1B3367;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, ol, ul  {
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .header {
+      background: #1B3367;
+      text-align: center;
+      padding: 12em 0;
+    }
+
+    .header__link {
+      color: #fafafa;
+    }
+
+    .main {
+      width: 960px;
+      padding: 2em 0;
+      margin: 0 auto;
+    }
+
+    .posts {
+      list-style: none;
+    }
+
+    .posts__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .article {
+      padding: 22px;
+      background: #fafafa;
+      color: #1B3367;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 2px 0 rgba(34, 34, 34, 0.05);
+    }
+
+    .article__header {
+      font-weight: 300;
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+
+    .article__number {
+      position: absolute;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+      color: #bdc3c7;
+    }
+
+    .article__info {
+      font-size: 16px;
+      color: #141412;
+      font-weight: bold;
+      margin-right: 2px;
+    }
+
+    .article__info:not(:last-child):after {
+      content: "\00B7";
+      margin-left: 5px;
+      color: #141412;
+    }
+
+    .article__info--link {
+      color: #2c286d;
+    }
+
+    .article__info--link:hover {
+      color: #2980b9;
+    }
+
+    .footer {
+      background: #1B3367;
+      color: #fafafa;
+      padding: 22px 0;
+      position: relative;
+    }
+
+    .footer__message {
+      position: absolute;
+      top: 50%;
+      right: 25px;
+      transform: translateY(-50%);
+      font-size: 11px;
+    }
+
+    .footer__icon {
+      color: #c0392b;
+      font-size: 10px;
+    }
+
+    .footer__link {
+      color: #f2f0f3;
+    }
+
+    .footer__link:hover {
+      color: #bdc3c7;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="/" class="header__link">
+      <h1>Baú do RoNca RoNca</h1>
+    </a>
+  </header>
+
+  <main class="main">
+    <ol class="posts">
+      <li class="posts__item">
+        <article class="article">
+          <span class="article__number">#108</span>
+          <h2 class="article__header">RoNca RoNca - Oi FM Web</h2>
+          <time datetime="2014-12-30" class="article__info">30/12/2014</time>
+          <a href="http://bit.ly/1TKoGaP" class="article__info article__info--link">Download</a>
+          <a href="http://bit.ly/1Svn81N" class="article__info article__info--link">Setlist</a>
+        </article>
+      </li>
+      <li class="posts__item">
+        <article class="article">
+          <span class="article__number">#107</span>
+          <h2 class="article__header">RoNca RoNca - Oi FM Web</h2>
+          <time datetime="2014-12-30" class="article__info">23/12/2014</time>
+          <a href="http://bit.ly/1HCEIOr" class="article__info article__info--link">Download</a>
+          <a href="http://bit.ly/1fg6juX" class="article__info article__info--link">Setlist</a>
+        </article>
+      </li>
+    </ol>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__message">
+      Made with <%= icon('heart', class: 'footer__icon') %> by <a href="http://calazans10.com" target="_blank" class="footer__link">@calazans10</a>
+    </small>
+  </footer>
+</body>
+</html>
