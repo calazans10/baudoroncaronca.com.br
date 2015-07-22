@@ -9,6 +9,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'font-awesome-sass', '~> 4.3.0'
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'

@@ -13,7 +13,7 @@
       font-family: 'Open Sans', sans-serif;
     }
 
-    h1, h2, h3, h4, h5, h6, ol, ul  {
+    h1, h2, h3, h4, h5, h6, ol, ul, p {
       padding: 0;
       margin: 0;
     }
@@ -29,12 +29,12 @@
     }
 
     .header__link {
-      color: #fafafa;
+      color: #fff;
     }
 
     .main {
       width: 960px;
-      padding: 2em 0;
+      padding: 30px 0;
       margin: 0 auto;
     }
 
@@ -48,7 +48,7 @@
 
     .article {
       padding: 22px;
-      background: #fafafa;
+      background: #fff;
       color: #1B3367;
       border-radius: 4px;
       position: relative;
@@ -69,40 +69,45 @@
       color: #bdc3c7;
     }
 
-    .article__info {
-      font-size: 16px;
+    .article__time {
       color: #141412;
+    }
+
+    .article__link {
+      color: #2c286d;
+    }
+
+    .article__link:focus,
+    .article__link:hover,
+    .article__link:active {
+      color: #2980b9;
+    }
+
+    .article__time,
+    .article__link {
+      font-size: 16px;
       font-weight: bold;
       margin-right: 2px;
     }
 
-    .article__info:not(:last-child):after {
+    .article__time:after,
+    .article__link:first-of-type:after {
       content: "\00B7";
       margin-left: 5px;
       color: #141412;
     }
 
-    .article__info--link {
-      color: #2c286d;
-    }
-
-    .article__info--link:hover {
-      color: #2980b9;
-    }
-
     .footer {
       background: #1B3367;
-      color: #fafafa;
-      padding: 22px 0;
-      position: relative;
+      color: #fff;
+      height: 44px;
+      padding: 0 25px;
     }
 
     .footer__message {
-      position: absolute;
-      top: 50%;
-      right: 25px;
-      transform: translateY(-50%);
-      font-size: 11px;
+      font-size: 12px;
+      line-height: 44px;
+      text-align: right;
     }
 
     .footer__icon {
@@ -111,11 +116,13 @@
     }
 
     .footer__link {
-      color: #f2f0f3;
+      color: #fff;
     }
 
-    .footer__link:hover {
-      color: #bdc3c7;
+    .footer__link:focus,
+    .footer__link:hover,
+    .footer__link:active {
+      /* something */
     }
   </style>
 </head>
@@ -132,27 +139,27 @@
         <article class="article">
           <span class="article__number">#108</span>
           <h2 class="article__header">RoNca RoNca - Oi FM Web</h2>
-          <time datetime="2014-12-30" class="article__info">30/12/2014</time>
-          <a href="http://bit.ly/1TKoGaP" class="article__info article__info--link">Download</a>
-          <a href="http://bit.ly/1Svn81N" class="article__info article__info--link">Setlist</a>
+          <time datetime="2014-12-30" class="article__time">30/12/2014</time>
+          <a href="http://bit.ly/1TKoGaP" class="article__link" target="_blank">Download</a>
+          <a href="http://bit.ly/1Svn81N" class="article__link" target="_blank">Setlist</a>
         </article>
       </li>
       <li class="posts__item">
         <article class="article">
           <span class="article__number">#107</span>
           <h2 class="article__header">RoNca RoNca - Oi FM Web</h2>
-          <time datetime="2014-12-30" class="article__info">23/12/2014</time>
-          <a href="http://bit.ly/1HCEIOr" class="article__info article__info--link">Download</a>
-          <a href="http://bit.ly/1fg6juX" class="article__info article__info--link">Setlist</a>
+          <time datetime="2014-12-30" class="article__time">23/12/2014</time>
+          <a href="http://bit.ly/1HCEIOr" class="article__link" target="_blank">Download</a>
+          <a href="http://bit.ly/1fg6juX" class="article__link" target="_blank">Setlist</a>
         </article>
       </li>
     </ol>
   </main>
 
   <footer class="footer">
-    <small class="footer__message">
+    <p class="footer__message">
       Made with <%= icon('heart', class: 'footer__icon') %> by <a href="http://calazans10.com" target="_blank" class="footer__link">@calazans10</a>
-    </small>
+    </p>
   </footer>
 </body>
 </html>
