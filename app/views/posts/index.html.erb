@@ -23,13 +23,20 @@
     }
 
     .header {
-      background: #1B3367;
+      background: #fff;
       text-align: center;
-      padding: 12em 0;
     }
 
-    .header__link {
+    .header__image {
+      width: 294px;
+      height: 215px;
+      padding: 50px 0;
+    }
+
+    .header__title {
+      background: #1B3367;
       color: #fff;
+      padding: 15px 0;
     }
 
     .main {
@@ -128,9 +135,8 @@
 </head>
 <body>
   <header class="header">
-    <a href="/" class="header__link">
-      <h1>Baú do RoNca RoNca</h1>
-    </a>
+    <%= image_tag "bau.jpg", class: "header__image" %>
+    <h1 class="header__title">Baú do RoNca RoNca</h1>
   </header>
 
   <main class="main">
