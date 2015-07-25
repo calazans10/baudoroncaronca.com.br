@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'font-awesome-sass', '~> 4.3.0'
 gem 'activeadmin', github: 'activeadmin'
 gem 'devise'
+gem 'will_paginate', '~> 3.0.6'
 
 group :development, :test do
   gem 'byebug'
