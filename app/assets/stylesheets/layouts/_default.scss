@@ -13,8 +13,8 @@
   width: 90%;
   margin: 0 auto;
 
-  @include media($huge) {
-    width: 940px;
+  @include media($large) {
+    width: 850px;
   }
 
   @include element(item) {
