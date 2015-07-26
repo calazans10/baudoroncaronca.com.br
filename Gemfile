@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 ruby "2.2.1"
 
 gem 'activeadmin', github: 'activeadmin'
