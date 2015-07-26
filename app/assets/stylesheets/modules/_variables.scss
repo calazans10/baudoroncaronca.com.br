@@ -1,1 +1,6 @@
+$small:  new-breakpoint(min-width 480px);
+$medium:  new-breakpoint(min-width 768px);
+$large:  new-breakpoint(min-width 1000px);
+$huge:  new-breakpoint(min-width 1200px);
+
 $font-family-sans: 'Open Sans', sans-serif;

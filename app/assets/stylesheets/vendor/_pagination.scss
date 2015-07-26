@@ -7,7 +7,13 @@
     margin-right: rem(5);
     color: #2c286d;
 
-    &:hover {
+    @include media($large) {
+      margin-right: rem(8);
+    }
+
+    &:focus,
+    &:hover,
+    &:active {
       color: #2980b9;
     }
   }
@@ -15,12 +21,20 @@
   .previous_page {
     margin-left: 0;
     margin-right: rem(5);
+
+    @include media($large) {
+      margin-right: rem(8);
+    }
   }
 
   .current {
     font-style: normal;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: rem(5);
+
+    @include media($large) {
+      margin-right: rem(8);
+    }
   }
 
   .next_page { margin: 0; }

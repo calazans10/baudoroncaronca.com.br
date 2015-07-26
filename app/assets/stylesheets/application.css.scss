@@ -1,12 +1,15 @@
 @import 'bourbon';
+@import 'neat';
 @import 'normalize-css';
 
 // TODO: Remove font awesome
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import 'vendor/pagination';
 
+@import 'modules/mixins';
 @import 'modules/variables';
+
+@import 'vendor/pagination';
 
 @import 'patterns/global';
 
