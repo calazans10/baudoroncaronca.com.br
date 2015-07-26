@@ -1,0 +1,24 @@
+.footer {
+  background: #1B3367;
+  color: #fff;
+  height: rem(60);
+}
+
+.footer__message {
+  font-size: rem(15);
+  line-height: rem(60);
+  text-align: center;
+}
+
+.footer__icon {
+  color: #c0392b;
+  font-size: rem(13) !important;
+}
+
+.footer__link { color: #F0EEE5; }
+
+.footer__link:focus,
+.footer__link:hover,
+.footer__link:active {
+  color: #bdc3c7;
+}

@@ -1,170 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Baú do RoNca RoNca</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
-  <style>
-    body {
-      width: 100%;
-      background: #F0EEE5;
-      color: #1B3367;
-      font-family: 'Open Sans', sans-serif;
-    }
+<ol class="podcasts">
+  <% @podcasts.each do |podcast| %>
+    <li class="podcasts__item">
+      <article class="article">
+        <span class="article__number">#<%= podcast.number %></span>
+        <h2 class="article__title"><%= podcast.title %> - <%= podcast.host.name %></h2>
+        <time datetime="<%= podcast.published_at.strftime("%Y-%m-%d") %>" class="article__time">
+          <%= podcast.published_at.strftime("%d/%m/%Y") %>
+        </time>
+        <% if podcast.source %>
+          <a href="<%= podcast.source %>" class="article__link" target="_blank">Download</a>
+        <% end %>
+        <% if podcast.setlist %>
+          <a href="<%= podcast.setlist %>" class="article__link" target="_blank">Setlist</a>
+        <% end %>
+      </article>
+    </li>
+  <% end %>
+</ol>
 
-    h1, h2, h3, h4, h5, h6, ol, ul, p {
-      padding: 0;
-      margin: 0;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .header {
-      background: #fff;
-      text-align: center;
-    }
-
-    .header__image {
-      width: 367px;
-      height: 269px;
-      padding: 40px 0;
-    }
-
-    .header__title {
-      background: #1B3367;
-      color: #fff;
-      padding: 15px 0;
-    }
-
-    .main {
-      width: 960px;
-      padding: 30px 0;
-      margin: 0 auto;
-    }
-
-    .podcasts {
-      list-style: none;
-    }
-
-    .podcasts__item {
-      margin-bottom: 20px;
-    }
-
-    .article {
-      padding: 22px;
-      background: #fff;
-      color: #1B3367;
-      border-radius: 4px;
-      position: relative;
-      box-shadow: 0 2px 0 rgba(34, 34, 34, 0.05);
-    }
-
-    .article__title {
-      font-weight: 300;
-      font-size: 22px;
-      margin-bottom: 8px;
-    }
-
-    .article__number {
-      position: absolute;
-      top: 50%;
-      right: 22px;
-      transform: translateY(-50%);
-      color: #bdc3c7;
-    }
-
-    .article__time {
-      color: #141412;
-    }
-
-    .article__link {
-      color: #2c286d;
-    }
-
-    .article__link:focus,
-    .article__link:hover,
-    .article__link:active {
-      color: #2980b9;
-    }
-
-    .article__time,
-    .article__link {
-      font-size: 16px;
-      font-weight: bold;
-      margin-right: 2px;
-    }
-
-    .article__time:after,
-    .article__link:first-of-type:after {
-      content: "\00B7";
-      margin-left: 5px;
-      color: #141412;
-    }
-
-    .footer {
-      background: #1B3367;
-      color: #fff;
-      height: 44px;
-      padding: 0 25px;
-    }
-
-    .footer__message {
-      font-size: 12px;
-      line-height: 44px;
-      text-align: right;
-    }
-
-    .footer__icon {
-      color: #c0392b;
-      font-size: 10px;
-    }
-
-    .footer__link {
-      color: #fff;
-    }
-
-    .footer__link:focus,
-    .footer__link:hover,
-    .footer__link:active {
-      /* something */
-    }
-  </style>
-</head>
-<body>
-  <header class="header">
-    <%= image_tag "bau.jpg", class: "header__image" %>
-    <h1 class="header__title">Baú do RoNca RoNca</h1>
-  </header>
-
-  <main class="main">
-    <ol class="podcasts">
-      <% @podcasts.each do |podcast| %>
-        <li class="podcasts__item">
-          <article class="article">
-          <span class="article__number">#<%= podcast.number %></span>
-          <h2 class="article__title"><%= podcast.title %> - <%= podcast.host.name %></h2>
-          <time datetime="<%= podcast.published_at.strftime("%Y-%m-%d") %>" class="article__time"><%= podcast.published_at.strftime("%d/%m/%Y") %></time>
-          <% if podcast.source %>
-            <a href="<%= podcast.source %>" class="article__link" target="_blank">Download</a>
-          <% end %>
-          <% if podcast.setlist %>
-            <a href="<%= podcast.setlist %>" class="article__link" target="_blank">Setlist</a>
-          <% end %>
-        </article>
-        </li>
-      <% end %>
-    </ol>
-
-    <%= will_paginate @podcasts %>
-  </main>
-
-  <footer class="footer">
-    <p class="footer__message">
-      Made with <%= icon('heart', class: 'footer__icon') %> by <a href="http://calazans10.com" target="_blank" class="footer__link">@calazans10</a>
-    </p>
-  </footer>
-</body>
-</html>
+<%= will_paginate @podcasts %>

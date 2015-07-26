@@ -1,0 +1,58 @@
+.main {
+  background: #F0EEE5;
+  padding: rem(30) 0;
+}
+
+.podcasts {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.podcasts__item { margin-bottom: rem(20); }
+
+.article {
+  padding: rem(20);
+  background: #fff;
+  color: #1B3367;
+  border-radius: rem(4);
+  position: relative;
+  box-shadow: 0 2px 0 rgba(34, 34, 34, 0.05);
+}
+
+.article__title {
+  font-weight: 300;
+  font-size: rem(18);
+  margin-bottom: rem(5);
+}
+
+.article__number {
+  position: absolute;
+  top: 50%;
+  right: rem(20);
+  transform: translateY(-50%);
+  color: #bdc3c7;
+}
+
+.article__time { color: #141412; }
+
+.article__link { color: #2c286d; }
+
+.article__link:focus,
+.article__link:hover,
+.article__link:active {
+  color: #2980b9;
+}
+
+.article__time,
+.article__link {
+  font-size: rem(14);
+  font-weight: bold;
+  margin-right: rem(2);
+}
+
+.article__link:before {
+  content: "\00B7";
+  margin-right: rem(5);
+  color: #141412;
+}
+

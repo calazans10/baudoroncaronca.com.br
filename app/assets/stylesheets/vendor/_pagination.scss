@@ -1,0 +1,37 @@
+.pagination {
+  text-align: center;
+  margin-top: rem(30);
+  font-size: rem(16);
+
+  a {
+    margin-right: rem(5);
+    color: #2c286d;
+
+    &:hover {
+      color: #2980b9;
+    }
+  }
+
+  .previous_page {
+    margin-left: 0;
+    margin-right: rem(5);
+  }
+
+  .current {
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .next_page { margin: 0; }
+
+  .previous_page.disabled,
+  .next_page.disabled {
+    color: #7f8c8d;
+  }
+}
+
+
+
+
+

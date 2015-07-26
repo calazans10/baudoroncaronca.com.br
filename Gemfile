@@ -1,22 +1,24 @@
 source 'https://rubygems.org'
-ruby "2.2.0"
+ruby "2.2.1"
 
-gem 'rails', '4.2.3'
-gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'font-awesome-sass', '~> 4.3.0'
 gem 'activeadmin', github: 'activeadmin'
+gem 'bourbon'
+gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
+gem 'font-awesome-sass', '~> 4.3.0'
+gem 'jquery-rails'
+gem 'pg'
+gem 'rails', '4.2.3'
+gem 'rails-assets-normalize-css'
+gem 'sass-rails', '~> 5.0'
+gem 'turbolinks'
+gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate', '~> 3.0.6'
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'web-console', '~> 2.0'
 end
 
 group :development do
