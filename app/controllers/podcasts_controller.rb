@@ -1,5 +1,5 @@
 class PodcastsController < ApplicationController
   def index
-    @podcasts = Podcast.page(params[:page])
+    @podcasts = Podcast.where(published: true).page(params[:page])
   end
 end

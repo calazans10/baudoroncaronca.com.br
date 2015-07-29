@@ -1,5 +1,5 @@
 ActiveAdmin.register Podcast do
-  permit_params :title, :number, :source, :setlist, :published_at, :author_id, :host_id
+  permit_params :title, :number, :source, :setlist, :published, :published_at, :author_id, :host_id
 
   config.sort_order = 'published_at_desc'
 
@@ -22,5 +22,6 @@ ActiveAdmin.register Podcast do
   filter :author
   filter :host
   filter :number
+  filter :published
   filter :published_at
 end
