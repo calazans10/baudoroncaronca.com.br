@@ -218,6 +218,7 @@ GEM
       ffi (>= 0.5.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rollbar (2.1.0)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -296,6 +297,7 @@ DEPENDENCIES
   rails (= 4.2.3)
   rails-assets-normalize-css
   rails_12factor
+  rollbar (~> 2.1.0)
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
   spring
