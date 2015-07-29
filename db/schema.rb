@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150725144524) do
+ActiveRecord::Schema.define(version: 20150729013700) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -66,11 +66,12 @@ ActiveRecord::Schema.define(version: 20150725144524) do
     t.datetime "published_at"
     t.string   "source"
     t.string   "setlist"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
     t.string   "title"
     t.integer  "author_id"
     t.integer  "host_id"
+    t.boolean  "published",    default: true
   end
 
   add_index "podcasts", ["author_id"], name: "index_podcasts_on_author_id", using: :btree
