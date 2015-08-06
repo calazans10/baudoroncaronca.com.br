@@ -248,6 +248,8 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
     shellany (0.0.1)
+    skylight (0.7.1)
+      activesupport (>= 3.0.0)
     slop (3.6.0)
     spring (1.3.6)
     sprockets (3.2.0)
@@ -300,6 +302,7 @@ DEPENDENCIES
   rollbar (~> 2.1.0)
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
+  skylight
   spring
   turbolinks
   uglifier (>= 1.3.0)
