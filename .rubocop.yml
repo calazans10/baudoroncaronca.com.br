@@ -5,7 +5,7 @@ AllCops:
   Exclude:
     - db/**/*
     - bin/**/*
-    - 'config/**/*'
+    - config/**/*
 
   RunRailsCops: true
 
