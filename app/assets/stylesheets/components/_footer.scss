@@ -16,12 +16,16 @@
   }
 
   @include element(icon) {
+    display: inline;
     color: $red;
-    font-size: rem(13);
+    font-size: rem(14);
+    font-style: normal;
 
     @include media($huge) {
-      font-size: rem(11);
+      font-size: rem(12);
     }
+
+    &:before { content: '\2665'; }
   }
 
   @include element(link) {
