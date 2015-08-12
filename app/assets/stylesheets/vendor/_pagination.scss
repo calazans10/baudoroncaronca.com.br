@@ -1,11 +1,11 @@
 .pagination {
-  text-align: center;
   margin-top: rem(30);
   font-size: rem(16);
+  text-align: center;
 
   a {
     margin-right: rem(5);
-    color: #2c286d;
+    color: $purple;
 
     @include media($large) {
       margin-right: rem(8);
@@ -14,13 +14,13 @@
     &:focus,
     &:hover,
     &:active {
-      color: #2980b9;
+      color: $blue;
     }
   }
 
   .previous_page {
-    margin-left: 0;
     margin-right: rem(5);
+    margin-left: 0;
 
     @include media($large) {
       margin-right: rem(8);
@@ -28,9 +28,9 @@
   }
 
   .current {
+    margin-right: rem(5);
     font-style: normal;
     font-weight: bold;
-    margin-right: rem(5);
 
     @include media($large) {
       margin-right: rem(8);
@@ -41,7 +41,7 @@
 
   .previous_page.disabled,
   .next_page.disabled {
-    color: #7f8c8d;
+    color: $gray;
   }
 }
 

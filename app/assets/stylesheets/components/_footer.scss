@@ -1,7 +1,7 @@
 .footer {
-  background: #1B3367;
-  color: #fff;
   height: rem(60);
+  background: $lightpurple;
+  color: $white;
 
   @include element(message) {
     font-size: rem(15);
@@ -9,28 +9,28 @@
     text-align: center;
 
     @include media($huge) {
+      margin-right: rem(35);
       font-size: rem(13);
       text-align: right;
-      margin-right: rem(35);
     }
   }
 
   @include element(icon) {
-    color: #c0392b;
-    font-size: rem(13) !important;
+    color: $red;
+    font-size: rem(13);
 
     @include media($huge) {
-      font-size: rem(11) !important;
+      font-size: rem(11);
     }
   }
 
   @include element(link) {
-    color: #F0EEE5;
+    color: $beige;
 
     &:focus,
     &:hover,
     &:active {
-      color: #bdc3c7;
+      color: $lightgray;
     }
   }
 }

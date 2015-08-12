@@ -1,12 +1,12 @@
 %article-element-common {
+  margin-right: rem(2);
   font-size: rem(14);
   font-weight: bold;
-  margin-right: rem(2);
 }
 
 .main {
-  background: #F0EEE5;
   padding: rem(30) 0;
+  background: $beige;
 }
 
 .podcasts {
@@ -23,11 +23,11 @@
 }
 
 .article {
-  padding: rem(20) rem(10);
-  background: #fff;
-  color: #1B3367;
-  border-radius: rem(4);
   position: relative;
+  padding: rem(20) rem(10);
+  border-radius: rem(4);
+  background: $white;
+  color: $lightpurple;
   box-shadow: 0 2px 0 rgba(34, 34, 34, 0.05);
 
   @include media($small) {
@@ -39,9 +39,9 @@
   }
 
   @include element(title) {
-    font-weight: 300;
-    font-size: rem(18);
     margin-bottom: rem(5);
+    font-size: rem(18);
+    font-weight: 300;
 
     @include media($huge) {
       font-size: rem(20);
@@ -53,7 +53,7 @@
     top: 50%;
     right: rem(10);
     transform: translateY(-50%);
-    color: #bdc3c7;
+    color: $lightgray;
     font-size: rem(15);
 
     @include media($small) {
@@ -67,23 +67,23 @@
 
   @include element(time) {
     @extend %article-element-common;
-    color: #141412;
+    color: $black;
   }
 
   @include element(link) {
     @extend %article-element-common;
-    color: #2c286d;
+    color: $purple;
 
     &:before {
-      content: "\00B7";
       margin-right: rem(5);
-      color: #141412;
+      color: $black;
+      content: '\00B7';
     }
 
     &:focus,
     &:hover,
     &:active {
-      color: #2980b9;
+      color: $blue;
     }
   }
 }

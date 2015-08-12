@@ -1,0 +1,18 @@
+scss_files: 'app/assets/stylesheets/**/*.scss'
+
+exclude: 'app/assets/stylesheets/active_admin.css.scss'
+
+linters:
+  BorderZero:
+    enabled: false
+
+  LeadingZero:
+    enabled: false
+
+  PropertySortOrder:
+    order: smacss
+
+  SelectorFormat:
+    exclude:
+      - app/assets/stylesheets/vendor/*.scss
+    convention: hyphenated_BEM

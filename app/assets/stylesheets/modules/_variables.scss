@@ -1,6 +1,16 @@
 $small:  new-breakpoint(min-width 480px);
-$medium:  new-breakpoint(min-width 768px);
+$medium: new-breakpoint(min-width 768px);
 $large:  new-breakpoint(min-width 1000px);
-$huge:  new-breakpoint(min-width 1200px);
+$huge:   new-breakpoint(min-width 1200px);
+
+$beige:       #f0eee5;
+$black:       #141412;
+$blue:        #2980b9;
+$gray:        #7f8c8d;
+$lightgray:   #bdc3c7;
+$purple:      #2c286d;
+$lightpurple: #1b3367;
+$red:         #c0392b;
+$white:       #fff;
 
 $font-family-sans: 'Open Sans', sans-serif;

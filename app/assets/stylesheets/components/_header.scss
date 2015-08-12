@@ -23,9 +23,9 @@
   }
 
   @include element(title) {
-    background: #1B3367;
-    color: #fff;
     padding: rem(15) 0;
+    background: $lightpurple;
+    color: $white;
     font-size: rem(25);
   }
 }
