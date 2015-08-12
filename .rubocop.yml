@@ -1,0 +1,16 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - db/**/*
+    - bin/**/*
+    - 'config/**/*'
+
+  RunRailsCops: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
