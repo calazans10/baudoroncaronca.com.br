@@ -1,5 +1,7 @@
 # Baú do RoNca RoNca
 
+[![Code Climate](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com/badges/gpa.svg)](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com)
+
 ## Contributing
 
 1. [Fork it](https://github.com/baudoroncaronca/baudoroncaronca.com)
