@@ -11,7 +11,7 @@ require "sprockets/railtie"
 
 Bundler.require(*Rails.groups)
 
-module Blog
+module Bau
   class Application < Rails::Application
     config.time_zone = 'Brasilia'
     config.i18n.default_locale = :"pt-BR"
