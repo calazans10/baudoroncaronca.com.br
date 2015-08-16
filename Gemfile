@@ -34,6 +34,7 @@ group :development do
 end
 
 group :test do
+  gem 'codeclimate-test-reporter', require: false
   gem 'faker'
   gem 'shoulda-matchers', require: false
   gem 'simplecov', require: false
