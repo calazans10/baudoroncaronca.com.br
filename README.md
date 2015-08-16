@@ -1,5 +1,6 @@
 # Baú do RoNca RoNca
 
+[![Circle CI](https://circleci.com/gh/baudoroncaronca/baudoroncaronca.com.svg?style=svg)](https://circleci.com/gh/baudoroncaronca/baudoroncaronca.com)
 [![Code Climate](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com/badges/gpa.svg)](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com)
 
 ## Contributing
