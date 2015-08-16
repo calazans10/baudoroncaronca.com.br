@@ -19,6 +19,7 @@ gem 'will_paginate', '~> 3.0.6'
 
 group :development, :test do
   gem 'byebug'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
@@ -30,6 +31,12 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'guard-rubocop'
   gem 'rubocop', require: false
+end
+
+group :test do
+  gem 'faker'
+  gem 'shoulda-matchers', require: false
+  gem 'simplecov', require: false
 end
 
 group :production do
