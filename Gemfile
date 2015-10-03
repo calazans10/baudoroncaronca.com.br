@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
 ruby "2.2.1"
 
 gem 'activeadmin', github: 'activeadmin'
@@ -10,12 +9,15 @@ gem 'jquery-rails'
 gem 'neat'
 gem 'pg'
 gem 'rails', '4.2.3'
-gem 'rails-assets-normalize-css'
 gem 'sass-rails', '~> 5.0'
 gem 'scss-lint'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate', '~> 3.0.6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-normalize-css'
+end
 
 group :development, :test do
   gem 'byebug'
