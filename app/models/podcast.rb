@@ -1,4 +1,4 @@
-class Podcast < ActiveRecord::Base
+class Podcast < ApplicationRecord
   default_scope { order(published_at: :desc) }
 
   belongs_to :author

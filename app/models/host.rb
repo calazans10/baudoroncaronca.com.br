@@ -1,4 +1,4 @@
-class Host < ActiveRecord::Base
+class Host < ApplicationRecord
   has_many :podcasts
 
   validates :name, presence: true

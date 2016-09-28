@@ -1,17 +1,19 @@
 source 'https://rubygems.org'
-ruby "2.2.1"
+ruby '2.3.1'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'bourbon'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.2'
 gem 'devise'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'jquery-rails'
 gem 'neat'
 gem 'pg'
-gem 'rails', '4.2.3'
+gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'sass-rails', '~> 5.0'
-gem 'scss-lint'
+gem 'scss_lint', require: false
 gem 'turbolinks'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate', '~> 3.0.6'
 
@@ -20,19 +22,22 @@ source 'https://rails-assets.org' do
 end
 
 group :development, :test do
-  gem 'byebug'
+  gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
   gem 'factory_girl_rails'
-  gem 'rspec-rails', '~> 3.0'
-  gem 'spring'
-  gem 'web-console', '~> 2.0'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
-  gem 'guard'
-  gem 'guard-livereload', '~> 2.4', require: false
+  gem 'guard-livereload', '~> 2.5', require: false
   gem 'guard-rspec', require: false
   gem 'guard-rubocop'
+  gem 'guard'
+  gem 'listen', '~> 3.0.5'
   gem 'rubocop', require: false
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring'
+  gem 'web-console'
 end
 
 group :test do
@@ -43,8 +48,7 @@ group :test do
 end
 
 group :production do
-  gem 'puma'
+  gem 'puma', '~> 3.0'
   gem 'rails_12factor'
-  gem 'rollbar', '~> 2.1.0'
+  gem 'rollbar'
 end
-

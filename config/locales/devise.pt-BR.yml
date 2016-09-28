@@ -26,6 +26,8 @@ pt-BR:
         subject: "Instruções para redefinir sua senha"
       unlock_instructions:
         subject: "Instruções para desbloquear sua conta"
+      password_change:
+        subject: "Senha modificada"
     omniauth_callbacks:
       failure: "Não foi possível autenticá-lo em %{kind} por causa de \"%{reason}\"."
       success: "Autenticado com sucesso em %{kind}."

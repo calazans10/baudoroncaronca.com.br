@@ -1,4 +1,4 @@
-class Author < ActiveRecord::Base
+class Author < ApplicationRecord
   has_many :podcasts
 
   validates :name, presence: true
