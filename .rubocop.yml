@@ -3,11 +3,13 @@ AllCops:
     - '**/Rakefile'
     - '**/config.ru'
   Exclude:
-    - db/**/*
-    - bin/**/*
-    - config/**/*
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
 
-  RunRailsCops: true
+Rails:
+  Enabled: true
 
 Style/ClassAndModuleChildren:
   Enabled: false
@@ -17,4 +19,3 @@ Style/Documentation:
 
 Metrics/LineLength:
   Max: 99
-
