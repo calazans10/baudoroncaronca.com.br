@@ -5,7 +5,6 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'bourbon'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
-gem 'dotenv-rails'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'jquery-rails'
 gem 'neat'
@@ -24,6 +23,7 @@ end
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'dotenv-rails'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '~> 3.5'
 end
