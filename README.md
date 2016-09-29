@@ -1,6 +1,6 @@
 # Baú do RoNca RoNca
 
-[![Circle CI](https://circleci.com/gh/baudoroncaronca/baudoroncaronca.com.svg?style=svg)](https://circleci.com/gh/baudoroncaronca/baudoroncaronca.com)
+[![Circle CI](https://circleci.com/gh/calazans10/baudoroncaronca.com.br.svg?style=svg)](https://circleci.com/gh/calazans10/baudoroncaronca.com.br)
 [![Code Climate](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com/badges/gpa.svg)](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com)
 [![Test Coverage](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com/badges/coverage.svg)](https://codeclimate.com/github/baudoroncaronca/baudoroncaronca.com/coverage)
 
