@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150729013700) do
+ActiveRecord::Schema.define(version: 20161001163244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 20150729013700) do
     t.text     "body"
     t.string   "resource_id",   null: false
     t.string   "resource_type", null: false
-    t.string   "author_type"
     t.integer  "author_id"
+    t.string   "author_type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["author_type", "author_id"], name: "index_active_admin_comments_on_author_type_and_author_id", using: :btree
@@ -46,10 +46,19 @@ ActiveRecord::Schema.define(version: 20150729013700) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  create_table "authors", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "episodes", force: :cascade do |t|
+    t.integer  "number"
+    t.datetime "published_at"
+    t.string   "source"
+    t.string   "setlist"
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "title"
+    t.integer  "host_id"
+    t.integer  "radio_id"
+    t.boolean  "published",    default: true
+    t.index ["host_id"], name: "index_episodes_on_host_id", using: :btree
+    t.index ["radio_id"], name: "index_episodes_on_radio_id", using: :btree
   end
 
   create_table "hosts", force: :cascade do |t|
@@ -58,21 +67,12 @@ ActiveRecord::Schema.define(version: 20150729013700) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "podcasts", force: :cascade do |t|
-    t.integer  "number"
-    t.datetime "published_at"
-    t.string   "source"
-    t.string   "setlist"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
-    t.string   "title"
-    t.integer  "author_id"
-    t.integer  "host_id"
-    t.boolean  "published",    default: true
-    t.index ["author_id"], name: "index_podcasts_on_author_id", using: :btree
-    t.index ["host_id"], name: "index_podcasts_on_host_id", using: :btree
+  create_table "radios", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "podcasts", "authors"
-  add_foreign_key "podcasts", "hosts"
+  add_foreign_key "episodes", "hosts"
+  add_foreign_key "episodes", "radios"
 end

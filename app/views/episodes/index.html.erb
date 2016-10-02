@@ -1,0 +1,21 @@
+<ol class="podcasts">
+  <% @episodes.each do |episode| %>
+    <li class="podcasts__item">
+      <article class="article">
+        <span class="article__number">#<%= episode.number %></span>
+        <h2 class="article__title"><%= episode.title %> - <%= episode.radio.name %></h2>
+        <time datetime="<%= episode.published_at.strftime("%Y-%m-%d") %>" class="article__time">
+          <%= episode.published_at.strftime("%d/%m/%Y") %>
+        </time>
+        <% unless episode.source.blank? %>
+          <a href="<%= episode.source %>" class="article__link" target="_blank">Download</a>
+        <% end %>
+        <% unless episode.setlist.blank? %>
+          <a href="<%= episode.setlist %>" class="article__link" target="_blank">Setlist</a>
+        <% end %>
+      </article>
+    </li>
+  <% end %>
+</ol>
+
+<%= will_paginate @episodes %>

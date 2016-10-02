@@ -24,16 +24,14 @@ end
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
   gem 'guard-livereload', '~> 2.5', require: false
-  gem 'guard-rspec', require: false
   gem 'guard-rubocop'
   gem 'guard'
   gem 'listen', '~> 3.0.5'
+  gem 'pry-rails'
   gem 'rubocop', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring'
@@ -42,8 +40,6 @@ end
 
 group :test do
   gem 'codeclimate-test-reporter', require: false
-  gem 'faker'
-  gem 'shoulda-matchers', require: false
   gem 'simplecov', require: false
 end
 

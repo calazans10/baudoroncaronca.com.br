@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :podcasts, only: :index
+  resources :episodes, only: :index
 
-  root 'podcasts#index'
+  root 'episodes#index'
 end
