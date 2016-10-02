@@ -5,5 +5,3 @@ engines:
     enabled: true
   coffeelint:
     enabled: true
-  rubocop:
-    enabled: true
