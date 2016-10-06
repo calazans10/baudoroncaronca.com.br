@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class EpisodesControllerTest < ActionDispatch::IntegrationTest
+class EditionsControllerTest < ActionDispatch::IntegrationTest
   test 'should get index' do
-    get episodes_url
+    get editions_url
     assert_response :success
   end
 end

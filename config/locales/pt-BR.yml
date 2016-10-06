@@ -8,9 +8,9 @@ pt-BR:
       admin_user:
         one: Administrador
         other: Administradores
-      episode:
-        one: Episódio
-        other: Episódios
+      edition:
+        one: Edição
+        other: Edições
       host:
         one: Apresentador
         other: Apresentadores
@@ -24,7 +24,7 @@ pt-BR:
         last_sign_in_at: Último acesso em
         password: Senha
         password_confirmation: Confirmação de senha
-      episode:
+      edition:
         <<: *default
         number: Número
         published: Publicado?

@@ -1,5 +1,5 @@
 <ol class="podcasts">
-  <% @episodes.each do |episode| %>
+  <% @editions.each do |episode| %>
     <li class="podcasts__item">
       <article class="article">
         <span class="article__number">#<%= episode.number %></span>
@@ -18,4 +18,4 @@
   <% end %>
 </ol>
 
-<%= will_paginate @episodes %>
+<%= will_paginate @editions %>

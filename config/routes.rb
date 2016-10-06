@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  resources :episodes, only: :index
+  resources :editions, only: :index
 
-  root 'episodes#index'
+  root 'editions#index'
 end

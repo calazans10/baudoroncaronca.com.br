@@ -1,11 +1,11 @@
-ActiveAdmin.register Episode do
+ActiveAdmin.register Edition do
   permit_params :title, :number, :source, :setlist, :published, :published_at, :host_id, :radio_id
 
   config.sort_order = 'published_at_desc'
 
   index do
     selectable_column
-    column 'Episódio' do |episode|
+    column 'Edição' do |episode|
       "#{episode.title} #{episode.number}"
     end
     column 'Apresentador' do |episode|

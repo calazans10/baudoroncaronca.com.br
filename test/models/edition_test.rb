@@ -1,8 +1,8 @@
 require 'test_helper'
 
-class EpisodeTest < ActiveSupport::TestCase
+class EditionTest < ActiveSupport::TestCase
   def setup
-    @episode = episodes(:valid)
+    @episode = editions(:valid)
   end
 
   test 'episode valid' do

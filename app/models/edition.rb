@@ -1,4 +1,4 @@
-class Episode < ApplicationRecord
+class Edition < ApplicationRecord
   default_scope { order(published_at: :desc) }
 
   belongs_to :host

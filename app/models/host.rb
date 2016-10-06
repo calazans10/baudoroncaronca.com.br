@@ -1,5 +1,5 @@
 class Host < ApplicationRecord
-  has_many :episodes
+  has_many :editions
 
   validates :name, presence: true
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161001163244) do
+ActiveRecord::Schema.define(version: 20161006124906) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20161001163244) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  create_table "episodes", force: :cascade do |t|
+  create_table "editions", force: :cascade do |t|
     t.integer  "number"
     t.datetime "published_at"
     t.string   "source"
@@ -57,8 +57,8 @@ ActiveRecord::Schema.define(version: 20161001163244) do
     t.integer  "host_id"
     t.integer  "radio_id"
     t.boolean  "published",    default: true
-    t.index ["host_id"], name: "index_episodes_on_host_id", using: :btree
-    t.index ["radio_id"], name: "index_episodes_on_radio_id", using: :btree
+    t.index ["host_id"], name: "index_editions_on_host_id", using: :btree
+    t.index ["radio_id"], name: "index_editions_on_radio_id", using: :btree
   end
 
   create_table "hosts", force: :cascade do |t|
@@ -73,6 +73,6 @@ ActiveRecord::Schema.define(version: 20161001163244) do
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "episodes", "hosts"
-  add_foreign_key "episodes", "radios"
+  add_foreign_key "editions", "hosts"
+  add_foreign_key "editions", "radios"
 end
