@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.baudoroncaronca.com.br/">
-    <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/logo.png?raw=true" width="546">
+    <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/android-icon-192x192.png?raw=true" width="546">
   </a>
 </p>
 
