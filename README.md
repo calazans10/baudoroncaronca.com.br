@@ -1,17 +1,19 @@
 <p align="center">
   <a href="https://www.baudoroncaronca.com.br/">
-    <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/logo.png?raw=true" width="512">
+    <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/android-icon-192x192.png?raw=true" width="192">
   </a>
 </p>
 
-<h1 align="center">Baú do RoNca RoNca</h1>
+<p align="center"><strong>Baú do RoNca RoNca</strong></p>
 
-[![Circle CI](https://circleci.com/gh/calazans10/baudoroncaronca.com.br.svg?style=svg)](https://circleci.com/gh/calazans10/baudoroncaronca.com.br)
-[![Code Climate](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/gpa.svg)](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br)
-[![Test Coverage](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/coverage.svg)](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/coverage)
-[![Issue Count](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/issue_count.svg)](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br)
+<p align="center">
+  <a href="https://circleci.com/gh/calazans10/baudoroncaronca.com.br"><img src="https://circleci.com/gh/calazans10/baudoroncaronca.com.br.svg?style=svg"></a>
+  <a href="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br"><img src="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/gpa.svg"></a>
+  <a href="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/coverage"><img src="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/coverage.svg"></a>
+  <a href="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br"><img src="https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/issue_count.svg"></a>
+</p>
 
-Website for Baú do RoNca RoNca
+---
 
 ## Contributing
 
