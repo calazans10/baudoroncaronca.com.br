@@ -1,4 +1,10 @@
-# Baú do RoNca RoNca
+<p align="center">
+  <a href="https://www.baudoroncaronca.com.br/">
+    <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/logo.png?raw=true" width="546">
+  </a>
+</p>
+
+<h1 align="center">Baú do RoNca RoNca</h1>
 
 [![Circle CI](https://circleci.com/gh/calazans10/baudoroncaronca.com.br.svg?style=svg)](https://circleci.com/gh/calazans10/baudoroncaronca.com.br)
 [![Code Climate](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br/badges/gpa.svg)](https://codeclimate.com/github/calazans10/baudoroncaronca.com.br)
