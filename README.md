@@ -15,6 +15,26 @@
 
 ---
 
+## Usage
+
+1. Clone this repository
+
+        $ git@github.com:calazans10/baudoroncaronca.com.br.git
+
+2. Change directory to `baudoroncaronca.com.br`
+
+        $ cd baudoroncaronca.com.br
+
+3. Install the dependencies and setup the application
+
+        $ bin/setup
+
+4. Start the web server
+
+        $ bin/rails server
+
+5. Using a browser, go to `http://localhost:3000` to load the initial page
+
 ## Contributing
 
 1. Fork it
