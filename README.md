@@ -21,11 +21,11 @@
 
         $ git@github.com:calazans10/baudoroncaronca.com.br.git
 
-2. Change directory to `baudoroncaronca.com.br`
+2. Change directory to the application folder
 
         $ cd baudoroncaronca.com.br
 
-3. Install the dependencies and setup the application
+3. Install the dependencies and prepare the application
 
         $ bin/setup
 
