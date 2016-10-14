@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.baudoroncaronca.com.br/">
+  <a href="http://www.baudoroncaronca.com.br/">
     <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/logo.png?raw=true" width="256">
   </a>
 </p>
