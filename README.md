@@ -35,7 +35,7 @@
 
 5. Using a browser, go to `http://localhost:3000` to load the initial page
 
-## Contributing
+## Contribute
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
