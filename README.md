@@ -2,9 +2,8 @@
   <a href="http://www.baudoroncaronca.com.br/">
     <img alt="Yarn" src="https://github.com/calazans10/baudoroncaronca.com.br/blob/master/app/assets/images/logo.png?raw=true" width="256">
   </a>
+  <h3 align="center">Baú do RoNca RoNca</h3>
 </p>
-
-<p align="center"><strong>Baú do RoNca RoNca</strong></p>
 
 <p align="center">
   <a href="https://circleci.com/gh/calazans10/baudoroncaronca.com.br"><img src="https://circleci.com/gh/calazans10/baudoroncaronca.com.br.svg?style=svg"></a>
