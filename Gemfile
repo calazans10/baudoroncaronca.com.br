@@ -18,10 +18,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate', '~> 3.0.6'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-normalize-css'
-end
-
 group :development, :test do
   gem 'byebug', platform: :mri
 end
@@ -46,6 +42,5 @@ end
 
 group :production do
   gem 'puma', '~> 3.0'
-  gem 'rails_12factor'
   gem 'rollbar'
 end

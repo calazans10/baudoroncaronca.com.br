@@ -19,7 +19,7 @@
 
 1. Clone this repository
 
-        $ git@github.com:calazans10/baudoroncaronca.com.br.git
+        $ git clone git@github.com:calazans10/baudoroncaronca.com.br.git
 
 2. Change directory to the application folder
 
