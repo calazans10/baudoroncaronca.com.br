@@ -3,15 +3,15 @@ ruby '2.3.1'
 
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
 gem 'bourbon'
-gem 'coffee-rails', '~> 4.2'
-gem 'devise'
-gem 'dotenv-rails'
+gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
+gem 'devise', '>= 4.2.0'
+gem 'dotenv-rails', '>= 2.1.1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources.git'
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.1'
 gem 'neat'
 gem 'pg'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'scss_lint', require: false
 gem 'turbolinks'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -32,7 +32,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'spring'
-  gem 'web-console'
+  gem 'web-console', '>= 3.3.1'
 end
 
 group :test do
