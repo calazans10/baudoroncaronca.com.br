@@ -41,6 +41,6 @@ group :test do
 end
 
 group :production do
-  gem 'puma', '~> 3.0'
+  gem 'puma', '~> 4.2'
   gem 'rollbar'
 end
