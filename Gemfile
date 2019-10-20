@@ -27,7 +27,7 @@ group :development do
   gem 'guard-livereload', '~> 2.5', require: false
   gem 'guard-minitest'
   gem 'guard-rubocop'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '~> 3.2.0'
   gem 'pry-rails'
   gem 'rubocop', require: false
   gem 'spring-watcher-listen', '~> 2.0.0'
