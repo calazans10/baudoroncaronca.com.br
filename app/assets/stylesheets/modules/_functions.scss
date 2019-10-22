@@ -6,7 +6,7 @@
   @return $number;
 }
 
-@function em($pxval, $base: $base-font-size) {
+@function em($pxval, $base: 16) {
   @if not unitless($pxval) {
     $pxval: strip-unit($pxval);
   }
@@ -16,7 +16,7 @@
   @return ($pxval / $base) * 1em;
 }
 
-@function rem($pxval, $base: $base-font-size) {
+@function rem($pxval, $base: 16) {
   @if not unitless($pxval) {
     $pxval: strip-unit($pxval);
   }
