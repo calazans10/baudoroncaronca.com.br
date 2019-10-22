@@ -10,7 +10,7 @@ gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resour
 gem 'jquery-rails', '>= 4.2.1'
 gem 'neat'
 gem 'pg'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.2.3'
 gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'scss_lint', require: false
 gem 'turbolinks'
