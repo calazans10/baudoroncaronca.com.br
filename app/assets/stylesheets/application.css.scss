@@ -1,16 +1,16 @@
-@import 'bourbon';
-@import 'neat';
-@import 'vendor/normalize';
+@import "bourbon";
+@import "neat";
+@import "vendor/normalize";
 
-@import 'modules/mixins';
-@import 'modules/variables';
+@import "modules/functions";
+@import "modules/mixins";
+@import "modules/variables";
 
-@import 'vendor/pagination';
+@import "vendor/pagination";
 
-@import 'patterns/global';
+@import "patterns/global";
 
-@import 'components/header';
-@import 'components/footer';
+@import "components/header";
+@import "components/footer";
 
-@import 'layouts/default';
-
+@import "layouts/default";
