@@ -159,9 +159,9 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    listen (3.0.8)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
+    listen (3.2.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -229,9 +229,9 @@ GEM
       activerecord (>= 5.0)
       activesupport (>= 5.0)
       i18n
-    rb-fsevent (0.9.7)
-    rb-inotify (0.9.7)
-      ffi (>= 0.5.0)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.10.0)
+      ffi (~> 1.0)
     responders (2.4.1)
       actionpack (>= 4.2.0, < 6.0)
       railties (>= 4.2.0, < 6.0)
@@ -325,7 +325,7 @@ DEPENDENCIES
   guard-rubocop
   inherited_resources!
   jquery-rails (>= 4.2.1)
-  listen (~> 3.0.5)
+  listen (~> 3.2.0)
   neat
   pg
   pry-rails
