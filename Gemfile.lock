@@ -83,8 +83,8 @@ GEM
       thor (~> 0.19)
     builder (3.2.3)
     byebug (9.0.6)
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
+    codeclimate-test-reporter (1.0.7)
+      simplecov
     coderay (1.1.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
