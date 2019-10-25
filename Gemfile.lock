@@ -17,12 +17,12 @@ GIT
 
 GIT
   remote: https://github.com/activeadmin/inherited_resources.git
-  revision: 29ed7764364c420f9f30d04b432a1f8e63713e79
+  revision: 08c0b46a009b5a65db1bb642123ff2beeb5f0dc3
   specs:
     inherited_resources (1.11.0)
-      actionpack (>= 5.0, < 6.1)
+      actionpack (>= 5.2, < 6.1)
       has_scope (~> 0.6)
-      railties (>= 5.0, < 6.1)
+      railties (>= 5.2, < 6.1)
       responders (>= 2, < 4)
 
 GEM
@@ -241,9 +241,9 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    responders (2.4.1)
-      actionpack (>= 4.2.0, < 6.0)
-      railties (>= 4.2.0, < 6.0)
+    responders (3.0.0)
+      actionpack (>= 5.0)
+      railties (>= 5.0)
     rollbar (2.22.1)
     rubocop (0.49.0)
       parallel (~> 1.10)
