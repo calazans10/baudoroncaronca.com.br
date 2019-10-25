@@ -3,7 +3,7 @@ ruby '2.4.9'
 
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
 gem 'bourbon'
-gem 'coffee-rails', '~> 4.2', '>= 4.2.1'
+gem 'coffee-rails', '~> 5.0'
 gem 'devise', '>= 4.7.1'
 gem 'dotenv-rails', '>= 2.1.1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources.git'
